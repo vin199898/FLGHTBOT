@@ -1,8 +1,9 @@
-name: Run Python Script Every Hour
+name: Run Python Script Every Hour (Manual and Scheduled)
 
 on:
   schedule:
-    - cron: '0 * * * *'  # This is the cron syntax to run every hour on the hour
+    - cron: '0 * * * *'  # This runs every hour on the hour
+  workflow_dispatch:  # This allows manual triggering
 
 jobs:
   run-script:
@@ -15,7 +16,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.9'
+          python-version: '3.x'
 
       - name: Install dependencies
         run: |
@@ -24,4 +25,5 @@ jobs:
 
       - name: Run Python script
         run: |
-          python script.py  # Replace with the name of your Python script
+          script.py  # Replace with the name of your Python script
+
