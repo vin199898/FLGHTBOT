@@ -17,7 +17,7 @@ def send_telegram_message(message):
     return response
 
 # API details
-url = "https://sky-scanner3.p.rapidapi.com/flights/search-multi-city"
+url = "https://sky-flights.p.rapidapi.com/fly-to-country"
 
 # Payload for multi-city search
 payload = {
