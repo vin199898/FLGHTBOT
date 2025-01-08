@@ -46,8 +46,8 @@ payload = {
 
 headers = {
     "x-rapidapi-key": "920483404emshda44bffa1a696e7p10d222jsn75c54104e428",
-    "x-rapidapi-host": "sky-scanner3.p.rapidapi.com",
-    "Content-Type": "application/json"
+    "x-rapidapi-host": "sky-flights.p.rapidapi.com",
+    "Accept": "application/json"
 }
 
 # Get response from API
